@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb://localhost:27017/SongBook",
+    "jwtSecret": "nwsapp_jwt"
+}
