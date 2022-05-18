@@ -3,7 +3,13 @@ Backend for songbook
 
 # Instalation
 
-```git clone https://github.com/Besufikad17/SongBook-API.git
-   cd SongBook-API
-   npm install
-   nodemon index.js
+## Clonning
+
+`git clone https://github.com/Besufikad17/SongBook-API.git`
+
+## Installing packages
+`cd SongBook-API`
+`npm install`
+
+## Runinng
+`nodemon index.js`
