@@ -5,10 +5,10 @@ const mongoose = require('mongoose');
 const helmet = require('helmet');
 const config = require('./config/default.json');
 const routes = require('./routes/routes');
-const req = require('express/lib/request');
+const PORT = process.env.PORT || 5000;
 const bodyParser = require('body-parser')
 
-mongoose.connect(config.mongoURI, { useNewUrlParser: true });
+mongoose.connect(config.hostedMongoURI, { useNewUrlParser: true });
 
 mongoose.connection.on('error', (err) => {
     console.log('Error in the database:', err);
@@ -32,4 +32,4 @@ app.use(express.json())
 app.use('/api', routes)
 
 
-app.listen(5500);
+app.listen(PORT);

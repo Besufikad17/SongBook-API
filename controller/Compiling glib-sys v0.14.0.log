@@ -1,0 +1,90 @@
+ Compiling glib-sys v0.14.0
+   Compiling glib-sys v0.10.1
+   Compiling yuck v0.1.0 (/home/besufikad/eww/crates/yuck)
+   Compiling simplexpr v0.1.0 (/home/besufikad/eww/crates/simplexpr)
+   Compiling gobject-sys v0.10.0
+   Compiling gio-sys v0.10.1
+   Compiling gobject-sys v0.14.0
+   Compiling cairo-sys-rs v0.14.9
+   Compiling gdk-pixbuf-sys v0.10.0
+error: failed to run custom build command for `gdk-pixbuf-sys v0.10.0`
+
+Caused by:
+  process didn't exit successfully: `/home/besufikad/eww/target/release/build/gdk-pixbuf-sys-774a096c8a1d44d7/build-script-build` (exit status: 1)
+  --- stdout
+  cargo:rerun-if-env-changed=GDK_PIXBUF_2.0_NO_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG
+  cargo:rerun-if-env-changed=PKG_CONFIG
+  cargo:rerun-if-env-changed=GDK_PIXBUF_2.0_STATIC
+  cargo:rerun-if-env-changed=GDK_PIXBUF_2.0_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_STATIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_ALL_DYNAMIC
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_PATH
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_LIBDIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64-unknown-linux-gnu
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR_x86_64_unknown_linux_gnu
+  cargo:rerun-if-env-changed=HOST_PKG_CONFIG_SYSROOT_DIR
+  cargo:rerun-if-env-changed=PKG_CONFIG_SYSROOT_DIR
+
+  --- stderr
+  `"pkg-config" "--libs" "--cflags" "gdk-pixbuf-2.0" "gdk-pixbuf-2.0 >= 2.30"` did not exit successfully: exit status: 1
+  --- stderr
+  Package gdk-pixbuf-2.0 was not found in the pkg-config search path.
+  Perhaps you should add the directory containing `gdk-pixbuf-2.0.pc'
+  to the PKG_CONFIG_PATH environment variable
+  No package 'gdk-pixbuf-2.0' found
+  Package gdk-pixbuf-2.0 was not found in the pkg-config search path.
+  Perhaps you should add the directory containing `gdk-pixbuf-2.0.pc'
+  to the PKG_CONFIG_PATH environment variable
+  No package 'gdk-pixbuf-2.0' found
+
+warning: build failed, waiting for other jobs to finish...
+error[E0554]: `#![feature]` may not be used on the stable release channel
+ --> crates/simplexpr/src/lib.rs:1:1
+  |
+1 | #![feature(box_patterns)]
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0554]: `#![feature]` may not be used on the stable release channel
+ --> crates/simplexpr/src/lib.rs:2:1
+  |
+2 | #![feature(pattern)]
+  | ^^^^^^^^^^^^^^^^^^^^
+
+error[E0554]: `#![feature]` may not be used on the stable release channel
+ --> crates/simplexpr/src/lib.rs:3:1
+  |
+3 | #![feature(box_syntax)]
+  | ^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0554]: `#![feature]` may not be used on the stable release channel
+ --> crates/simplexpr/src/lib.rs:4:1
+  |
+4 | #![feature(try_blocks)]
+  | ^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0554]: `#![feature]` may not be used on the stable release channel
+ --> crates/simplexpr/src/lib.rs:5:1
+  |
+5 | #![feature(unwrap_infallible)]
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0554]: `#![feature]` may not be used on the stable release channel
+ --> crates/simplexpr/src/lib.rs:6:1
+  |
+6 | #![feature(never_type)]
+  | ^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0554]: `#![feature]` may not be used on the stable release channel
+ --> crates/simplexpr/src/lib.rs:7:1
+  |
+7 | #![feature(once_cell)]
+  | ^^^^^^^^^^^^^^^^^^^^^^
